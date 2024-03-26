@@ -38,7 +38,7 @@ const Navbar = () => {
               <a>Listed Books</a>
             </NavLink>
             <NavLink
-             to=''
+             to='page to read'
               className={({ isActive }) => (isActive ? "text-primary font-bold" : "font-bold")}
             >
               <a>Pages to Read</a>
@@ -62,7 +62,7 @@ const Navbar = () => {
             <a>Listed Books</a>
           </NavLink>
           <NavLink
-           to=''
+           to='page to read'
              className={({ isActive }) => (isActive ? "text-primary font-bold" : "font-bold")}
           >
             <a>Pages to Read</a>
