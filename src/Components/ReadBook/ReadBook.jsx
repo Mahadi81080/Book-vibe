@@ -14,7 +14,7 @@ const ReadBook = ({ book }) => {
     publisher,
     yearOfPublishing,
     rating,
-    bookId
+    bookId,
   } = book;
   return (
     <div>
@@ -27,17 +27,19 @@ const ReadBook = ({ book }) => {
               className="object-contain h-72 sm:h-80 lg:h-50 xl:h-112 2xl:h-128"
             />
           </div>
-          <div className="flex-1 space-y-3">
-            <h1 className="text-5xl font-bold"> {bookName}</h1>
+          <div className="lg:flex-1 space-y-3">
+            <h1 className=" text-2xl lg:text-5xl font-bold"> {bookName}</h1>
             <p className="py-6">By : {author}</p>
-            <div className="flex text-green-400 gap-6">
-              <h3 className="text-lg font-semibold text-black">Tag </h3>
-              <h2 className="text-sm bg-slate-100 p-1 rounded-full px-2">
-                {tags[0]}
-              </h2>
-              <h2 className="text-sm bg-slate-100 p-1 rounded-full px-2">
-                {tags[1]}
-              </h2>
+            <div className="flex flex-col lg:flex-row text-green-400 gap-6">
+              <h3 className="text-lg font-semibold text-black inline-block">Tag </h3>
+              <div className="flex gap-3">
+                <h2 className="text-sm bg-slate-100 p-1 rounded-full text-center w-1/3 lg:w-auto px-2">
+                  {tags[0]}
+                </h2>
+                <h2 className="text-sm bg-slate-100 p-1 rounded-full text-center px-2 w-1/3 lg:w-auto">
+                  {tags[1]}
+                </h2>
+              </div>
               <div className="flex gap-2 justify-center items-center text-black">
                 <CiLocationOn />
                 <p>Year of Publishing:</p>
@@ -63,7 +65,10 @@ const ReadBook = ({ book }) => {
               <div className="text-xs bg-orange-100 text-orange-400 rounded-full p-2">
                 <h3>Rating:{rating}</h3>
               </div>
-              <Link to={`/book/${bookId}`} className="text-xs p-2 bg-green-600 text-white rounded-full">
+              <Link
+                to={`/book/${bookId}`}
+                className="text-xs p-2 bg-green-600 text-white rounded-full"
+              >
                 View details
               </Link>
             </div>

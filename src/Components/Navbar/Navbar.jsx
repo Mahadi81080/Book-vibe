@@ -27,49 +27,49 @@ const Navbar = () => {
           >
             <NavLink
               to="/"
-              className={({ isActive }) => (isActive ? "text-primary font-bold" : "font-bold")}
-            >
+              className={({ isActive }) => (isActive ? "text-green-600 font-bold border border-green-400 px-3 py-1 rounded-md" : "font-bold px-3 py-1")}
+              >
               <a>Home</a>
             </NavLink>
             <NavLink
             to='/list'
-              className={({ isActive }) => (isActive ? "text-primary font-bold" : "font-bold")}
+            className={({ isActive }) => (isActive ? "text-green-600 font-bold border border-green-400 px-3 py-1 rounded-md" : "font-bold px-3 py-1")}
             >
               <a>Listed Books</a>
             </NavLink>
             <NavLink
              to='page to read'
-              className={({ isActive }) => (isActive ? "text-primary font-bold" : "font-bold")}
-            >
+             className={({ isActive }) => (isActive ? "text-green-600 font-bold border border-green-400 px-3 py-1 rounded-md" : "font-bold px-3 py-1")}
+             >
               <a>Pages to Read</a>
             </NavLink>
           </ul>
         </div>
-        <a className="btn btn-ghost text-2xl font-semibold">Book Vibe</a>
+        <a className="btn btn-ghost text-lg lg:text-2xl font-semibold">Book Vibe</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-6">
           <NavLink
             to="/"
-            className={({ isActive }) => (isActive ? "text-primary font-bold" : "font-bold")}
+            className={({ isActive }) => (isActive ? "text-green-600 font-bold border border-green-400 px-3 py-1 rounded-md" : "font-bold px-3 py-1")}
           >
             <a>Home</a>
           </NavLink>
           <NavLink
            to='/list'
-             className={({ isActive }) => (isActive ? "text-primary font-bold" : "font-bold")}
+           className={({ isActive }) => (isActive ? "text-green-600 font-bold border border-green-400 px-3 py-1 rounded-md" : "font-bold px-3 py-1")}
           >
             <a>Listed Books</a>
           </NavLink>
           <NavLink
            to='page to read'
-             className={({ isActive }) => (isActive ? "text-primary font-bold" : "font-bold")}
-          >
+           className={({ isActive }) => (isActive ? "text-green-600 font-bold border border-green-400 px-3 py-1 rounded-md" : "font-bold px-3 py-1")}
+           >
             <a>Pages to Read</a>
           </NavLink>
         </ul>
       </div>
-      <div className="navbar-end flex gap-4">
+      <div className="navbar-end flex lg:gap-4">
         <a className="btn bg-[#23be0a]">Sing In</a>
         <a className="btn bg-[#59c6d2]">Sing Up</a>
       </div>
