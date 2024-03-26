@@ -22,6 +22,7 @@ const BookDetails = () => {
   } = book;
   const handleBookMark = (book) => {
     saveBook(book)
+    console.log(book);
   };
   const handleWhiteList =book=>{
     saveWhiteList(book)
@@ -75,7 +76,7 @@ const BookDetails = () => {
             </div>
             <div className="flex gap-4 mt-3">
               <a onClick={() => handleBookMark(book)} className="btn btn-outline">Read</a>
-              <a onClick={() => handleWhiteList(book)} className="btn bg-[#59c6d2] text-white">Whitelist</a>
+              <a onClick={() => handleWhiteList(book)} className="btn bg-[#59c6d2] text-white">Wishlist</a>
             </div>
           </div>
         </a>

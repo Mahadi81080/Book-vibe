@@ -11,12 +11,13 @@ export const getBooks = () => {
 
 export const saveBook = (book) => {
   let books = getBooks();
-  const isExist = books.find((b) => b.Id === book.Id);
+  const isExist = books.find((b) => b.bookId === book.bookId);
+  console.log(isExist);
   if (isExist) {
-    toast.error("Book already bookmarked");
+    toast.error("Book already added to readlist");
     return;
   }
   books.push(book);
   localStorage.setItem("books", JSON.stringify(books));
-  toast.success("Book bookmarked successfully");
+  toast.success("Book added successfully");
 };

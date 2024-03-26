@@ -30,7 +30,7 @@ const ReadBook = ({ book }) => {
           <div className="flex-1 space-y-3">
             <h1 className="text-5xl font-bold"> {bookName}</h1>
             <p className="py-6">By : {author}</p>
-            <div className="flex text-green-400 gap-6 ">
+            <div className="flex text-green-400 gap-6">
               <h3 className="text-lg font-semibold text-black">Tag </h3>
               <h2 className="text-sm bg-slate-100 p-1 rounded-full px-2">
                 {tags[0]}

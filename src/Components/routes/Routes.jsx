@@ -8,10 +8,12 @@ import ListedBooks from "../ListedBooks/ListedBooks";
 import ReadBooks from "../ReadBooks/ReadBooks";
 import WhiteList from "../WhiteList/WhiteList";
 import Rechart from "../Rechart/Rechart";
+import ErrorPage from "../ErrorPage/ErrorPage";
 export  const router = createBrowserRouter([
     {
       path: "/",
       element: <MainSection></MainSection>,
+      // errorElement:<ErrorPage></ErrorPage>,
       children:[
         {
             path:"/",

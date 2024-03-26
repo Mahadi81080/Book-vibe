@@ -10,7 +10,7 @@ const ReadBooks = () => {
     setBooks(storedBooks);
   }, []);
   return (
-    <div className="">
+    <div>
       {books.map((book) => (
         <ReadBook key={book.id} book={book}></ReadBook>
       ))}
