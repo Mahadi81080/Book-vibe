@@ -1,0 +1,80 @@
+[
+  {
+    "bookId": 1,
+    "bookName": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "image": "https://i.postimg.cc/Hx6xqrP3/The-Great-Gatsby-Cover-1925-Retouched.jpg",
+    "review": "A timeless classic exploring the decadence of the Jazz Age and the American Dream.",
+    "totalPages": 180,
+    "rating": 4.5,
+    "category": "Fiction",
+    "tags": ["Classic", "Romance", "Tragedy"],
+    "publisher": "Scribner",
+    "yearOfPublishing": 1925
+  },
+  {
+    "bookId": 2,
+    "bookName": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "image": "https://i.postimg.cc/KYNvTKFF/To-Kill-a-Mockingbird-first-edition-cover.jpg",
+    "review": "A poignant portrayal of racial injustice and moral growth in the Deep South.",
+    "totalPages": 281,
+    "rating": 4.8,
+    "category": "Fiction",
+    "tags": ["Coming of Age", "Legal Drama"],
+    "publisher": "J. B. Lippincott & Co.",
+    "yearOfPublishing": 1960
+  },
+  {
+    "bookId": 3,
+    "bookName": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "image": "https://i.postimg.cc/d08njYSJ/download.png",
+    "review": "A rebellious odyssey of teenage angst and disillusionment.",
+    "totalPages": 224,
+    "rating": 4.3,
+    "category": "Fiction",
+    "tags": ["Young Adult", "Cultural"],
+    "publisher": "Little, Brown and Company",
+    "yearOfPublishing": 1951
+  },
+  {
+    "bookId": 4,
+    "bookName": "Poddoja Uponnas",
+    "author": "Humayun Ahmed",
+    "image": "https://i.postimg.cc/0QkGGJwC/Poddoja-Elma-Behrouz-456b7-372904.jpg",
+    "review": "A captivating tale exploring the complexities of human relationships and societal norms.",
+    "totalPages": 248,
+    "rating": 4.4,
+    "category": "Fiction",
+    "tags": ["Bangla Literature", "Family Drama"],
+    "publisher": "Annyaprokash",
+    "yearOfPublishing": 2004
+  },
+  {
+    "bookId": 5,
+    "bookName": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "image": "https://i.postimg.cc/k5XFKb8v/download.jpg",
+    "review": "An enchanting adventure through Middle-earth with Bilbo Baggins.",
+    "totalPages": 310,
+    "rating": 4.6,
+    "category": "Fantasy",
+    "tags": ["Adventure", "Epic"],
+    "publisher": "George Allen & Unwin",
+    "yearOfPublishing": 1937
+  },
+  {
+    "bookId": 6,
+    "bookName": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "image": "https://i.postimg.cc/nr8DRjs5/MV5-BMTA1-NDQ3-NTcy-OTNe-QTJe-QWpw-Z15-Bb-WU3-MDA0-Mz-A4-Mz-E-V1.jpg",
+    "review": "A timeless romance set in the class-conscious world of Georgian England.",
+    "totalPages": 279,
+    "rating": 4.9,
+    "category": "Romance",
+    "tags": ["Classic", "Regency"],
+    "publisher": "T. Egerton, Whitehall",
+    "yearOfPublishing": 1813
+  }
+]
