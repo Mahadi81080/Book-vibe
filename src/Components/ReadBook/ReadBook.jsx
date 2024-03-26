@@ -31,7 +31,9 @@ const ReadBook = ({ book }) => {
             <h1 className=" text-2xl lg:text-5xl font-bold"> {bookName}</h1>
             <p className="py-6">By : {author}</p>
             <div className="flex flex-col lg:flex-row text-green-400 gap-6">
-              <h3 className="text-lg font-semibold text-black inline-block">Tag </h3>
+              <h3 className="text-lg font-semibold text-black inline-block">
+                Tag{" "}
+              </h3>
               <div className="flex gap-3">
                 <h2 className="text-sm bg-slate-100 p-1 rounded-full text-center w-1/3 lg:w-auto px-2">
                   {tags[0]}
@@ -46,7 +48,7 @@ const ReadBook = ({ book }) => {
                 <h3>{yearOfPublishing}</h3>
               </div>
             </div>
-            <div className="flex items-center gap-8 border-b-2 py-4">
+            <div className="flex items-center gap-3 lg:gap-8 border-b-2 py-4">
               <div className="flex justify-center items-center gap-2">
                 <FaUserGroup />
                 <p>Publisher:</p>
@@ -58,16 +60,18 @@ const ReadBook = ({ book }) => {
                 <h3>{totalPages}</h3>
               </div>
             </div>
-            <div className="flex items-center gap-6 mt-4">
-              <div className="bg-[#e0eeff] text-xs text-blue-400 rounded-full p-2">
-                <h3>Category:{category}</h3>
-              </div>
-              <div className="text-xs bg-orange-100 text-orange-400 rounded-full p-2">
-                <h3>Rating:{rating}</h3>
+            <div className="flex flex-col lg:flex-row items-center gap-6 mt-4">
+              <div className="flex gap-3">
+                <div className="bg-[#e0eeff] text-base lg:text-xs text-blue-400 rounded-full p-4 lg:p-2">
+                  <h3>Category:{category}</h3>
+                </div>
+                <div className="text-base lg:text-xs bg-orange-100 text-orange-400 rounded-full p-6 lg:p-2">
+                  <h3>Rating:{rating}</h3>
+                </div>
               </div>
               <Link
                 to={`/book/${bookId}`}
-                className="text-xs p-2 bg-green-600 text-white rounded-full"
+                className="text-base lg:text-xs p-4 lg:p-2 bg-green-600 text-white rounded-full"
               >
                 View details
               </Link>

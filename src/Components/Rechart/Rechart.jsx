@@ -85,7 +85,7 @@ const Rechart = () => {
     return <path d={getPath(x, y, width, height)} stroke="none" fill={fill} />;
   };
   return (
-    <div className="mt-5">
+    <div className="mt-5 max-w-md">
       <BarChart
         width={1100}
         height={500}
