@@ -1,8 +1,29 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# My Book Vibe
 
-Currently, two official plugins are available:
+Welcome to Book Vibe, your ultimate destination for all things books! Bookify helps book enthusiasts discover, organize, and engage with their favorite reads seamlessly.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Documentation
+
+To get started with My Awesome Website, simply visit our live site [here](https://www.example.com) and enjoying all the features our website.
+
+### Features and Characteristics
+
+- **Book Catalog:** Browse through an extensive catalog of books spanning various genres, authors, and themes.
+- **Book Details:** When you click book item you see book details.
+- **Reading Lists:** Create and manage reading lists to keep track of books you want to read, are currently reading, or have already read.
+- **Wishlist:** Do you want you can add wishlist item a book.
+- **Pages to read:** you founs a CustomShapeBarChart.
+
+
+## Technologies Used
+
+- React.js
+- tailwind css
+- React Icos 
+- Daisy Ui
+- Recharts
+- Mumba Ui
+- Fake data
+
