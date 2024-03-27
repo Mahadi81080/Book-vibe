@@ -8,7 +8,7 @@ import ListedBooks from "../ListedBooks/ListedBooks";
 import ReadBooks from "../ReadBooks/ReadBooks";
 import WhiteList from "../WhiteList/WhiteList";
 import Rechart from "../Rechart/Rechart";
-import ErrorPage from "../ErrorPage/ErrorPage";
+// import ErrorPage from "../ErrorPage/ErrorPage";
 export  const router = createBrowserRouter([
     {
       path: "/",
@@ -18,7 +18,7 @@ export  const router = createBrowserRouter([
         {
             path:"/",
             element:<Home></Home>,
-            loader:()=>fetch('/public/Books.json')
+            loader:()=>fetch('./Books.json')
         },
         {
             path:"/page to read",
@@ -27,7 +27,7 @@ export  const router = createBrowserRouter([
         {
             path:"/book/:bookId",
             element:<BookDetails></BookDetails>,
-            loader:()=>fetch('../public/Books.json')
+            loader:()=>fetch('../Books.json')
         },
         {
           path:'/list',

@@ -1,5 +1,14 @@
 import { useEffect, useState } from "react";
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from "recharts";
+import {
+  BarChart,
+  Bar,
+  Cell,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+} from "recharts";
 import { getBooks } from "../../utils";
 const Rechart = () => {
   const [chart, setChart] = useState([]);
@@ -67,16 +76,16 @@ const Rechart = () => {
     }, ${y + height}
     Z`;
   };
-  const CustomTooltip = ({ active, payload}) => {
+  const CustomTooltip = ({ active, payload }) => {
     if (active && payload && payload.length) {
-        const { name, uv } = payload[0].payload;
+      const { name, uv } = payload[0].payload;
       return (
         <div className="custom-tooltip">
-         <p className="label">{`${name} : ${uv}`}</p>
+          <p className="label">{`${name} : ${uv}`}</p>
         </div>
       );
     }
-  
+
     return null;
   };
   const TriangleBar = (props) => {
@@ -86,33 +95,33 @@ const Rechart = () => {
   };
   return (
     <div className="mt-5 max-w-md">
-      <BarChart
-        width={1100}
-        height={500}
-        data={data}
-        margin={{
-          top: 20,
-          right: 30,
-          left: 20,
-          bottom: 5,
-        }}
-      >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" />
-        <YAxis />
-        <Tooltip content={<CustomTooltip />} />
-          <Legend />
-        <Bar
-          dataKey="uv"
-          fill="#8884d8"
-          shape={<TriangleBar />}
-          label={{ position: "top" }}
+        <BarChart
+          width={1100}
+          height={500}
+          data={data}
+          margin={{
+            top: 20,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
         >
-          {data.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={colors[index % 20]} />
-          ))}
-        </Bar>
-      </BarChart>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip content={<CustomTooltip />} />
+          <Legend />
+          <Bar
+            dataKey="uv"
+            fill="#8884d8"
+            shape={<TriangleBar />}
+            label={{ position: "top" }}
+          >
+            {data.map((entry, index) => (
+              <Cell key={`cell-${index}`} fill={colors[index % 20]} />
+            ))}
+          </Bar>
+        </BarChart>
     </div>
   );
 };
