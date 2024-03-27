@@ -8,12 +8,14 @@ import ListedBooks from "../ListedBooks/ListedBooks";
 import ReadBooks from "../ReadBooks/ReadBooks";
 import WhiteList from "../WhiteList/WhiteList";
 import Rechart from "../Rechart/Rechart";
-// import ErrorPage from "../ErrorPage/ErrorPage";
+import ErrorPage from "../ErrorPage/ErrorPage";
+import Gallay from "../Gallary/Gallay";
+import PricingBook from "../PricingBook/PricingBook";
 export  const router = createBrowserRouter([
     {
       path: "/",
       element: <MainSection></MainSection>,
-      // errorElement:<ErrorPage></ErrorPage>,
+      errorElement:<ErrorPage></ErrorPage>,
       children:[
         {
             path:"/",
@@ -23,6 +25,14 @@ export  const router = createBrowserRouter([
         {
             path:"/page to read",
             element:<Rechart></Rechart>,
+        },
+        {
+            path:"/gallary",
+            element:<Gallay></Gallay>,
+        },
+        {
+            path:"/pricing",
+            element:<PricingBook></PricingBook>
         },
         {
             path:"/book/:bookId",

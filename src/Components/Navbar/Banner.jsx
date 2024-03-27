@@ -9,11 +9,16 @@ const Banner = () => {
           className="lg:max-w-sm rounded-lg"
         />
         <div className="space-y-8">
-          <h1 className="text-5xl font-bold">Books to freshen <br /> up your bookshelf</h1>
-          <Link to='/list' className="btn bg-[#23be0a] text-white">View The List</Link>
+          <h1 className="text-5xl font-bold">
+            Books to freshen <br /> up your bookshelf
+          </h1>
+          <Link to="/list" className="btn bg-[#23be0a] text-white">
+            View The List
+          </Link>
         </div>
       </div>
     </div>
+    
   );
 };
 
