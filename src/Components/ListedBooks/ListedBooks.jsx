@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { FaChevronDown } from "react-icons/fa";
-
 const ListedBooks = () => {
   const [tabIndex, setTabIndex] = useState(0);
   return (
@@ -18,14 +17,14 @@ const ListedBooks = () => {
             tabIndex={0}
             className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <li>
-              <a>rating</a>
+            <li >
+              <a onClick={() => handleBookFilter('rating')}>rating</a>
+            </li>
+            <li >
+              <a onClick={() => handleBookFilter('pages')}>Number of Pages</a>
             </li>
             <li>
-              <a>Number of Pages</a>
-            </li>
-            <li>
-              <a>Published year</a>
+              <a onClick={() => handleBookFilter('yearOfPublishing')}>Published year</a>
             </li>
           </ul>
         </div>

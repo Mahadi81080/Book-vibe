@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 const SingIn = () => {
   return (
-    <div className="flex justify-center my-9">
-      <div className="w-full max-w-md p-8 space-y-3 rounded-xl dark:bg-gray-50 dark:text-gray-800">
+    <div className="flex justify-center my-5">
+      <div className="w-full max-w-md p-8 space-y-3 rounded-xl shadow-xl dark:bg-gray-50 dark:text-gray-800">
         <h1 className="text-2xl font-bold text-center">Login</h1>
         <form action="" className="space-y-6">
           <div className="space-y-1 text-sm">

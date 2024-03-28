@@ -9,7 +9,7 @@ import Rechart from "../Rechart/Rechart";
 import ErrorPage from "../ErrorPage/ErrorPage";
 import Gallay from "../Gallary/Gallay";
 import PricingBook from "../PricingBook/PricingBook";
-import SingIn from "../Sing In/SingIn";
+import SingIn from "../SingIn/SingIn";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -32,6 +32,10 @@ export const router = createBrowserRouter([
       {
         path: "/pricing",
         element: <PricingBook></PricingBook>,
+      },
+      {
+        path: "/sing",
+        element: <SingIn></SingIn>,
       },
       {
         path: "/book/:bookId",

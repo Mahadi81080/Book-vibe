@@ -6,7 +6,7 @@ Welcome to Book Vibe, your ultimate destination for all things books! Bookify he
 
 ## Documentation
 
-To get started with My Awesome Website, simply visit our live site [here](https://www.example.com) and enjoying all the features our website.
+To get started with My Awesome Website, simply visit our live site [here](https://book-vibe-80.netlify.app/sing) and enjoying all the features our website.
 
 ### Features and Characteristics
 
